@@ -1,0 +1,11 @@
+{
+  "name": "mrkiffie",
+  "version": "0.0.1",
+  "description": "about mrkiffie",
+  "main": "index.js",
+  "scripts": {
+    "test": "node -e \"console.log(JSON.stringify(require('./index.js'), null, 2));\""
+  },
+  "author": "Kiffie Liversage <mrkiffie@gmail.com>",
+  "license": "ISC"
+}
