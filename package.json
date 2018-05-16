@@ -1,11 +1,33 @@
 {
   "name": "mrkiffie",
-  "version": "0.0.1",
-  "description": "about mrkiffie",
-  "main": "index.js",
+  "version": "1.0.0",
+  "description": "a quickstart",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "node -e \"console.log(JSON.stringify(require('./index.js'), null, 2));\""
+    "test": "jest",
+    "test-watch": "jest --watch"
   },
   "author": "Kiffie Liversage <mrkiffie@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "@types/node": "^10.1.2",
+    "jest-cli": "^23.0.0",
+    "ts-jest": "^22.4.6",
+    "typescript": "^2.8.3"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
 }
